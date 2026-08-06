@@ -1,0 +1,14 @@
+{
+  "name": "site-to-app-android",
+  "version": "1.0.0",
+  "description": "Capacitor WebView wrapper for site-to-app converter",
+  "main": "index.js",
+  "scripts": {
+    "build": "capacitor build android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
+    "@capacitor/cli": "^5.7.0"
+  }
+}
