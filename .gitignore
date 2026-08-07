@@ -1,49 +1,57 @@
-```
+```gitignore
 # Dependencies
 node_modules/
-**/node_modules/
 
-# Environment variables
-.env
-.env.local
-.env.*
-
-# Build outputs
+# Build artifacts
 dist/
 build/
-**/dist/
-**/build/
+*.js.map
+*.ts.map
 
-# IDE files
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Python related
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+venv/
+.venv/
+.env
+.env.local
 
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.temp
-
-# Coverage reports
+# Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Package manager caches
-.npm/
-.yarn/
-.pnpm-store/
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+Wait, I need to reconsider. The modified files are only TypeScript and CSS source files (`frontend/src/App.tsx`, `frontend/src/index.css`). There are no build artifacts, dependencies, or temporary files in the change list that would require additional ignore rules. The existing .gitignore appears to be from a different context and doesn't match the current project changes.
+
+Since only source code files are being modified, I should output an empty .gitignore.
+
+```gitignore
+
 ```
