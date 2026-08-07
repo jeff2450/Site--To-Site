@@ -1,40 +1,57 @@
-```
-# Android build artifacts
+```gitignore
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
 build/
-.gradle/
-*/build/
-*.apk
-*.aar
-*.so
+*.js.map
+*.ts.map
 
-# Android IDE files
-.idea/
-*.iml
-*.iws
-
-# Gradle
-.gradle/
-!gradle.properties
-!settings.gradle
-
-# Logs
+# Logs and temp files
 *.log
-
-# Temp files
 *.tmp
-*.swp
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Dependencies
-node_modules/
-venv/
-.venv/
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.Python
+venv/
+.venv/
+.env
+.env.local
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+Wait, I need to reconsider. The modified files are only TypeScript and CSS source files (`frontend/src/App.tsx`, `frontend/src/index.css`). There are no build artifacts, dependencies, or temporary files in the change list that would require additional ignore rules. The existing .gitignore appears to be from a different context and doesn't match the current project changes.
+
+Since only source code files are being modified, I should output an empty .gitignore.
+
+```gitignore
+
 ```
